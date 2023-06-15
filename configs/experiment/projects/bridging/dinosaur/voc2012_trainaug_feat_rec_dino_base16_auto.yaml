@@ -8,13 +8,13 @@ defaults:
 
 # The following parameters assume training on 8 GPUs, leading to an effective batch size of 64.
 trainer:
-  devices: 8
+  devices: 4
   max_steps: 300000
   max_epochs:
-  check_val_every_n_epoch: 50
+  check_val_every_n_epoch: 10
 
 dataset:
-  num_workers: 4
+  num_workers: 0
   batch_size: 8
 
 models:

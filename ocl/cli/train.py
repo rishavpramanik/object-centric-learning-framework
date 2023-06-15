@@ -63,7 +63,7 @@ class TrainingConfig:
     training_metrics: Optional[Dict[str, Any]] = None
     evaluation_metrics: Optional[Dict[str, Any]] = None
     load_checkpoint: Optional[str] = None
-    seed: Optional[int] = None
+    seed: Optional[int] = 42
     experiment: Dict[str, Any] = dataclasses.field(default_factory=lambda: {"callbacks": {}})
 
 
