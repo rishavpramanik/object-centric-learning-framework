@@ -15,4 +15,4 @@ hydra:
     timeout_min: 0
     cpus_per_task: 8
     tasks_per_node: 8
-    gres: gpu:8
+    gres: gpu:4
