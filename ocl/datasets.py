@@ -15,6 +15,7 @@ import torchdata
 from torch.utils.data import DataLoader
 from torch.utils.data._utils import collate as torch_collate
 from torchdata.datapipes.iter import IterDataPipe
+from torch.utils.data import functional_datapipe
 
 import ocl.utils.dataset_patches  # noqa: F401
 from ocl.data_decoding import default_decoder
@@ -60,7 +61,7 @@ def _collect_fields(transforms: Sequence[Transform]) -> Tuple[str]:
 def _get_sorted_values(transforms: Dict[str, Transform]) -> Tuple[Transform]:
     return tuple(transforms[key] for key in sorted(transforms.keys()))
 
-
+@functional_datapipe("webdatasetdatamodule")
 class WebdatasetDataModule(pl.LightningDataModule):
     """Webdataset Data Module."""
 
