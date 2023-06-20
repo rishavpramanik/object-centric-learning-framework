@@ -42,6 +42,8 @@ import torchmetrics as _torchmetrics
 
 import ocl.utils.trees as tree_utils
 
+from ocl.feature_extractors.timm import TimmFeatureExtractor
+
 _CLASS_TO_ROUTED_METHODS_MAP = {_torchmetrics.Metric: ["update"], _torch.nn.Module: ["forward"]}
 
 

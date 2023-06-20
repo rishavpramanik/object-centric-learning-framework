@@ -23,8 +23,8 @@ from ocl.feature_extractors.misc import (
     SAViFeatureExtractor,
     SlotAttentionFeatureExtractor,
 )
-from ocl.feature_extractors.timm import TimmFeatureExtractor
 
+from ocl.feature_extractors.timm import TimmFeatureExtractor
 _EXTRA_CLASS_TO_MODULE_MAP = {
     "TimmFeatureExtractor": "timm",
     "ClipImageModel": "clip",
