@@ -1,5 +1,5 @@
 # The PASCAL VOC 2012 dataset in the trainaug variant with instance segmentation masks.
-_target_: object-centric-learning-framework.ocl.datasets.WebdatasetDataModule
+_target_: ocl.datasets.WebdatasetDataModule
 train_shards: "${oc.env:DATASET_PREFIX}/voc2012/trainaug/shard-{000000..000040}.tar"
 train_size: 10582
 val_shards: "${oc.env:DATASET_PREFIX}/voc2012/val/shard-{000000..000011}.tar"
